@@ -1,0 +1,206 @@
+body{
+    margin: 0px;
+    background-color: #F5F5F5;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+ul{
+    padding: 0px;
+}
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+   
+}
+.header{
+    
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    padding: 0px;
+}
+.sbp{
+    font-size: 40px;
+    color: #040F4C;
+    padding: 15px;
+}
+.social{
+padding: 35px 20px 35px;
+}
+.fa-facebook-f:hover{
+    color: #3B5998;
+}
+.fa-instagram:hover{
+    color:#E43780;
+}
+.fa-twitter:hover{
+color: #1DA1F2;
+}
+.fa-youtube:hover{
+    color: #FF0000;
+}
+.social span{
+    margin-left: 25px;
+}
+.nav{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 50px;
+}
+.nav span{
+    padding: 20px;
+}
+.nav span a{
+    text-decoration: none;
+    color: #040F4C;
+ 
+}
+.nav span a:hover{
+    color: grey;
+}
+
+.banner img {
+    width: 100%;
+}
+h1,h2{
+    color: #040F4C;
+    text-align: center;
+}
+
+.section1 img{
+    width: 90%;    
+}
+.section1 .img{
+    width: 50%;
+}
+.section1 .desc{
+    width: 50%;
+    font-size: 20px;
+    color: #040F4C;
+}
+/* .prod{
+   width: 25%;
+   padding: 10px 10px 10px;
+   
+}
+.prod img{
+    width: 30%;
+    height: 260px;
+    margin-bottom: 10px;
+} */
+.section3 {
+    text-align: center;
+}
+.section4{
+    text-align: center;
+}
+.section4 img{
+    width: 480px;
+    height: 500px;
+}
+form{
+    text-align: center;
+}
+.section5{
+    width: 70%;
+    margin: 0px;
+    background-color:white;
+    margin-left: 160px;
+    padding: 70px;
+    color: #040F4C;
+}
+input{
+    width: 250px;
+}
+textarea{
+    width: 260px;
+    margin-left: 30px;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    background-color: #040F4C;
+    color: white;
+}
+i{
+    color: #040F4C;
+}
+
+
+
+/* Flip */
+.section2{
+    text-align: center;
+    padding: 10px 10px 10px;
+}
+
+.flip-container {
+	text-align: center;
+	perspective: 1000px;
+	display: inline-block;
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px;
+}
+	
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	/* width: 500px; */
+	height: 300px;
+}
+
+.flipper {
+	text-align: center;
+	transition: 0.4s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front img{
+    height: 300px;
+    width: 100%;
+}
+
+.front, .back {
+    text-align: center;
+	backface-visibility: hidden;
+    height: 300px;
+    width: 100%;
+	position: absolute;
+	top: 0;
+    left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+    /* margin-top: 100px; */
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 280px;
+    /* padding-top: 150px; */
+    background-color: #040F4C;
+}
